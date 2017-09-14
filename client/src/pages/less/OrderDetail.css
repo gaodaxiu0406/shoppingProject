@@ -1,0 +1,18 @@
+.order-detail .order-item img {
+  width: 100%;
+}
+.order-detail .order-item .order-item-text {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+.order-detail .order-item .order-item-text p {
+  padding: 0 10px;
+  margin-bottom: 0;
+  height: 26px;
+  line-height: 26px;
+  display: block;
+  font-family: "微软雅黑";
+}
+.order-detail .order-item .order-item-text p span {
+  font-weight: bold;
+}

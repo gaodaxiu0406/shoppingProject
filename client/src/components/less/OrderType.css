@@ -1,0 +1,101 @@
+.order-list {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.order-list .order-item-empty {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.order-list .order-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.order-list .order-item .order-item-detail {
+  display: flex;
+  flex: 1;
+  height: 120px;
+  border-bottom: 1px solid #eee;
+}
+.order-list .order-item .order-item-detail .order-item-img {
+  height: 110px;
+  flex: 0 0 110px;
+  margin: 5px 10px;
+}
+.order-list .order-item .order-item-detail .order-item-img img {
+  width: 100%;
+  height: 100%;
+}
+.order-list .order-item .order-item-detail .order-item-productinfo {
+  height: 110px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.order-list .order-item .order-item-detail .order-item-productinfo .order-item-name {
+  flex: 0 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 0;
+}
+.order-list .order-item .order-item-detail .order-item-productinfo .order-item-describe {
+  display: flex;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  padding: 5px;
+  text-overflow: ellipsis;
+}
+.order-list .order-item .order-item-detail .order-item-payinfo {
+  height: 110px;
+  line-height: 110px;
+  padding: 5px;
+  flex: 0 0 80px;
+}
+.order-list .order-item .order-item-detail .order-item-payinfo .order-item-totalpay {
+  margin-top: 10px;
+  color: #CB3D39;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 22px;
+}
+.order-list .order-item .order-item-detail .order-item-payinfo .order-item-state {
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.order-list .order-item .order-item-detail .order-item-payinfo .unpay {
+  color: #CB3D39;
+}
+.order-list .order-item .order-item-detail .order-item-payinfo .completed {
+  color: #5cb85c;
+}
+.order-list .order-item .order-item-count {
+  flex: 0 0 40px;
+  line-height: 40px;
+  text-align: right;
+  border-bottom: 1px solid #eee;
+}
+.order-list .order-item .order-item-count .order-item-number {
+  margin-left: 10px;
+}
+.order-list .order-item .order-item-count .order-item-count-1 {
+  margin-right: 10px;
+}
+.order-list .order-item .order-item-btn {
+  flex: 0 0 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.order-list .order-item .order-item-btn .paynow {
+  float: right;
+  margin-right: 10px;
+}

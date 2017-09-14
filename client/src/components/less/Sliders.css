@@ -1,0 +1,28 @@
+.sliders {
+  margin-top: 50px;
+  position: relative;
+}
+.sliders .slider img {
+  width: 100%;
+}
+.sliders .dots {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 9;
+}
+.sliders .dots li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+  background: #ccc;
+}
+.sliders .dots li:hover {
+  cursor: pointer;
+}
+.sliders .dots .active {
+  background-color: #e9203d;
+}

@@ -1,0 +1,67 @@
+.after-login .basic-info {
+  width: 100%;
+  height: 150px;
+  line-height: 150px;
+  padding: 0 20px;
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+}
+.after-login .basic-info img {
+  display: inline-block;
+  background-color: gray;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+  border: none;
+}
+.after-login .basic-info .user-name {
+  margin-right: 0;
+}
+.after-login .order {
+  text-decoration: none;
+}
+.after-login .order .myOrder {
+  border-bottom: 1px solid #ddd;
+  height: 50px;
+  line-height: 50px;
+  color: black;
+}
+.after-login .order .myOrder .order-text {
+  padding-left: 20px;
+}
+.after-login .userInfoList {
+  line-height: 50px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+}
+.after-login .userInfoList .first-menu {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.after-login .userInfoList .second-menu {
+  display: none;
+}
+.after-login .userInfoList .second-menu a {
+  display: block;
+  color: black;
+  border-bottom: 1px solid #ddd;
+  line-height: 50px;
+  text-decoration: none;
+}
+.after-login .userInfoList .second-menu a span {
+  padding-left: 40px;
+}
+.after-login .userInfoList .hide {
+  display: none;
+}
+.after-login .arrow {
+  line-height: 50px;
+  padding-right: 20px;
+}
+.after-login #logOut {
+  margin-top: 30px;
+}

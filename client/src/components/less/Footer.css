@@ -1,0 +1,25 @@
+#footer .nav-item {
+  display: inline-block;
+  width: 25%;
+  font-size: 16px;
+}
+#footer .nav-item i {
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  margin-top: 0;
+  padding: 0;
+}
+#footer .nav-item span {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  margin-top: 0;
+  padding: 0;
+}
+#footer .nav-item a {
+  text-decoration: none;
+  color: white;
+}

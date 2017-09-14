@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.product-type{
+    .product-list.empty-list{
+        text-align: center;
+        line-height: 80px;
+        height: 80px
+    }
+    .product-list{
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        height: 130px;
+        overflow: hidden;
+        background-color: #eee;
+        .product-img{
+            width: 112px;
+            height: 112px;
+            line-height: 112px;
+            padding: 5px;
+            float: left;
+            border-radius: 8px;
+            border:1px solid #ccc;
+            margin: 9px;
+            background-color: #fff;
+            img{
+                margin-top: 0px;
+                border-radius: 8px;
+                width: 100px;
+                height: 100px;
+                vertical-align: top;
+            }
+        }
+        .product-text{
+            font-family: "微软雅黑";
+            height: 128px;
+            margin-left: 120px;           
+            .product-name{
+                margin-top: 8px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .product-describe{
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        &:last-child{
+            margin-bottom: 50px;
+        }
+    }
+}

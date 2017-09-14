@@ -1,0 +1,24 @@
+.nav-by-ordertype {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  background-color: #eee;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-by-ordertype .nav-ordertype-item {
+  text-align: center;
+  flex: 1;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.nav-by-ordertype .nav-ordertype-item:last-child {
+  border-right: none;
+}
+.nav-by-ordertype .nav-ordertype-item:hover {
+  border-bottom: 2px solid dodgerblue;
+}
+.nav-by-ordertype .nav-ordertype-item a {
+  color: #000;
+  text-decoration: none;
+}

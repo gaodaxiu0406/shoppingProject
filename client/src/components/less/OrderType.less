@@ -1,0 +1,105 @@
+.order-list{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    .order-item-empty{
+        width: 100%;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;    
+    }
+    .order-item{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+        .order-item-detail{
+            display: flex;
+            flex: 1;
+            height: 120px;
+            border-bottom: 1px solid #eee;
+            
+            .order-item-img{
+                height: 110px;
+                flex: 0 0 110px;
+                margin:5px 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .order-item-productinfo{
+                height: 110px;                
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                .order-item-name{
+                    flex: 0 0 20px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin-bottom: 0;
+                }
+                .order-item-describe{
+                    display: flex;
+                    overflow: hidden;
+                    -webkit-line-clamp: 3;
+                    padding: 5px;
+                    text-overflow: ellipsis;
+                }
+            }
+            .order-item-payinfo{
+                height: 110px;
+                line-height: 110px;
+                // ???
+                padding: 5px;
+                flex: 0 0 80px;
+                .order-item-totalpay{
+                    margin-top: 10px;
+                    color:#CB3D39;
+                    text-align: center;
+                    height: 35px;
+                    line-height: 35px; 
+                    font-size: 22px;
+
+                }
+                .order-item-state{
+                    text-align: center;
+                    height: 35px;
+                    line-height: 35px;
+                }
+                .unpay{
+                    color: #CB3D39;
+                }
+                .completed{
+                    color: #5cb85c;
+                }
+            }
+        }
+
+        .order-item-count{
+            flex: 0 0 40px;
+            line-height: 40px;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+            .order-item-number{
+                margin-left: 10px;
+            }
+            .order-item-count-1{
+                margin-right: 10px;
+            }
+        }
+        .order-item-btn{
+            flex: 0 0 50px;
+            margin-top: 10px;
+            margin-right: 10px;
+            .paynow{
+                float: right;
+                margin-right: 10px;
+            }
+        }
+    }
+}
