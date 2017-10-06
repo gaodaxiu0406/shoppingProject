@@ -33,7 +33,7 @@ app.use(session({ //使用此中间件之后,会多一个req.session属性
     cookie:{
         maxAge:3600*1000
     }//会话有效期,过来这段时间会话终止
-}))
+}));
 
 app.use('/',index);
 app.use('/user',userRouter);

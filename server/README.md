@@ -6,3 +6,8 @@
 npm install
 npm run start
 ```
+
+## 技术栈
+- express
+- mongoose
+
