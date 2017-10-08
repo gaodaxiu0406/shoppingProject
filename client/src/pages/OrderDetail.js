@@ -17,8 +17,7 @@ export default class OrderDetail extends React.Component {
       method: 'get',
       dataType: 'json',
       data: {
-        orderNumber:null,
-        // orderNumber: this.props.history.location.state.orderNumber,
+        orderNumber: this.props.history.location.state.orderNumber,
         purchaser: JSON.parse(localStorage.getItem('myInfo'))._id
       },
       success: (res) => {
@@ -40,7 +39,7 @@ export default class OrderDetail extends React.Component {
     var s = time.split(':')[2].split('.')[0];
     createAt = date + ' ' + h + ' : ' + m + ' : ' + s;
     return createAt
-  }
+  };
   render() {
     // console.log(this.state.data);
     return (

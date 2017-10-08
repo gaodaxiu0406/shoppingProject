@@ -18,12 +18,12 @@ class PayOrder extends React.Component {
     this.setState({
       data: this.props.history.location.state
     });
-    /*// 如果是从订单列表的立即购买跳转过来的,则携带了订单号,保存到状态中
+    // 如果是从订单列表的立即购买跳转过来的,则携带了订单号,保存到状态中
     if (this.props.history.location.state.orderNumber) {
       this.setState(
         { orderNumber: this.props.history.location.state.orderNumber },
       );
-    }*/
+    }
   }
   handleClick = (e) => {
     // console.log(e.target.innerText);
@@ -158,10 +158,10 @@ class PayOrder extends React.Component {
             </div>
           </div>
           :
-          this.props.history.push({
+          /*this.props.history.push({
               pathname: '/myCenter',
-          })&alert('请登陆后进行购买')
-          /*<div className="before-login container">
+          })&alert('请登陆后进行购买')*/
+          <div className="before-login container">
          <div className="row">
          <Link to="/login" className='text-center col-xs-10 col-xs-offset-1' style={{ display: 'block' }}>
          <div className="btn btn-primary col-xs-12" style={{ marginTop: '50px' }}>
@@ -176,7 +176,7 @@ class PayOrder extends React.Component {
          </div>
          </Link>
          </div>
-         </div>*/
+         </div>
         }
       </div>
     )
