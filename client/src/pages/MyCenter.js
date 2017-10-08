@@ -9,13 +9,13 @@ export default class MyCenter extends React.Component {
     super();
     this.state = { myInfo: null }
   }
-
   changeHide = () => {
     $('.second-menu').stop().toggle(600);
-  }
+  };
   logout = () => {
     localStorage.removeItem('myInfo');
-    // location.reload();
+    alert('您已退出登录');
+    location.reload();
   };
   render() {
     let Content = () => (

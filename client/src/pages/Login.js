@@ -26,6 +26,7 @@ export default class Login extends Component {
           res = JSON.parse(res);
           this.setState({ userInfo: res.userInfo });
           // console.log(this.state.userInfo);
+          alert('恭喜您登录成功!');
           localStorage.setItem("myInfo", JSON.stringify(this.state.userInfo));
           this.props.history.push({
             pathname: '/myCenter',
@@ -39,7 +40,7 @@ export default class Login extends Component {
     return (
       <div className="wrap">
         <div className="row" >
-          <nav className="mynavbar navbar navbar-inverse navbar-fixed-top col-xs-12 " style={{padding:0,textAlign:"left",padding:0}}>
+          <nav className="mynavbar navbar navbar-inverse navbar-fixed-top col-xs-12 " style={{padding:0,textAlign:"left"}}>
             <span className="glyphicon glyphicon-menu-left col-xs-3 col-xs-offset-1" onClick={() => history.back()} style={{height:'50px',padding:0,lineHeight:'50px'}}/>
             <span className="col-xs-4 text-center" style={{padding:0}}>登录</span>
           </nav>

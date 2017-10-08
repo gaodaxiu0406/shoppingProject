@@ -17,14 +17,13 @@ class PayOrder extends React.Component {
     // 组件挂载后把产品数据保存的自己的状态中
     this.setState({
       data: this.props.history.location.state
-    })
-    // 如果是从订单列表的立即购买跳转过来的,则携带了订单号,保存到状态中
+    });
+    /*// 如果是从订单列表的立即购买跳转过来的,则携带了订单号,保存到状态中
     if (this.props.history.location.state.orderNumber) {
       this.setState(
         { orderNumber: this.props.history.location.state.orderNumber },
       );
-    }
-
+    }*/
   }
   handleClick = (e) => {
     // console.log(e.target.innerText);
@@ -33,7 +32,7 @@ class PayOrder extends React.Component {
     } else if (e.target.innerText == "-" && this.state.count > 1) {
       this.setState({ count: this.state.count - 1 });
     }
-  }
+  };
   // 点击结算,提交订单,并生成一个订单号,并显示付款页面
   clickCalculate = () => {
     // 如果是从订单列表的立即支付跳转过来,或者是点了结算,又点了取消,又点结算,说明已经有订单号了,不需要再提及订单,只需要显示付款界面付款即可
@@ -70,7 +69,7 @@ class PayOrder extends React.Component {
         $('.pay').stop().show(600);
       }
     }
-  }
+  };
   // 确认付款
   clickConfim = () => {
     let { orderNumber } = this.state;
@@ -93,11 +92,11 @@ class PayOrder extends React.Component {
         console.log(e);
       }
     })
-  }
+  };
   // 取消付款
   clickCancel = () => {
     $('.pay').stop().hide(600);
-  }
+  };
   render() {
     // console.log(this.props.history.location.state);
     return (
@@ -159,22 +158,25 @@ class PayOrder extends React.Component {
             </div>
           </div>
           :
-          <div className="before-login container">
-            <div className="row">
-              <Link to="/login" className='text-center col-xs-10 col-xs-offset-1' style={{ display: 'block' }}>
-                <div className="btn btn-primary col-xs-12" style={{ marginTop: '50px' }}>
-                  <span>登录</span>
-                </div>
-              </Link>
-            </div>
-            <div className="row">
-              <Link to="/signup" className='text-center col-xs-10 col-xs-offset-1' style={{ display: 'block' }}>
-                <div className="btn btn-default col-xs-12" style={{ marginTop: '30px' }}>
-                  <span>注册</span>
-                </div>
-              </Link>
-            </div>
-          </div>
+          this.props.history.push({
+              pathname: '/myCenter',
+          })&alert('请登陆后进行购买')
+          /*<div className="before-login container">
+         <div className="row">
+         <Link to="/login" className='text-center col-xs-10 col-xs-offset-1' style={{ display: 'block' }}>
+         <div className="btn btn-primary col-xs-12" style={{ marginTop: '50px' }}>
+         <span>登录</span>
+         </div>
+         </Link>
+         </div>
+         <div className="row">
+         <Link to="/signup" className='text-center col-xs-10 col-xs-offset-1' style={{ display: 'block' }}>
+         <div className="btn btn-default col-xs-12" style={{ marginTop: '30px' }}>
+         <span>注册</span>
+         </div>
+         </Link>
+         </div>
+         </div>*/
         }
       </div>
     )

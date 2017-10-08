@@ -17,7 +17,8 @@ export default class OrderDetail extends React.Component {
       method: 'get',
       dataType: 'json',
       data: {
-        orderNumber: this.props.history.location.state.orderNumber,
+        orderNumber:null,
+        // orderNumber: this.props.history.location.state.orderNumber,
         purchaser: JSON.parse(localStorage.getItem('myInfo'))._id
       },
       success: (res) => {
